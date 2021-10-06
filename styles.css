@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: gluten;
+  src: url("Gluten-Regular.ttf");
+}
+
+body {
+  font-family:Helvetica;
+  color:#ffffff;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Header/logo Title */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: left;
+  background: #88D58E;
+  color: white;
+
+
+}
+
+/* font size of heading */
+.header h1 {
+  font-family: gluten;
+  font-size: 60px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #ff944d;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style nav bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(255, 225, 160);
+  color: #ff6600;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #ffc299;
+  color: white;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.topics {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.topics h2 {
+  color: #267326;
+  padding: 10px 0 10px 0;
+  background-image: url("leaves.png");
+}
+
+.topics a {
+  background-color: #48B774;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.topics a:hover {
+  background-color: #B7FFDC
+;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  color:black;
+}
+
+.right {
+  background-image: url("leaves.png");
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+  color: #267326;
+}
+
+.right p {
+  background-color:rgba(255, 255, 255, 0.5);
+}
+
+.footer {
+  background-color:#88D58E;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+/*make a less ugly colour lmao*/
+.grid-container > div {
+  background-color: #b7de79;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 20px;
+}
+/*Make it work grrr
+.grid-container > div:hover: {
+  background-color:rgba(255, 255, 255, 0.5);
+}
+*/
+.responsive {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right, .header {
+    width: 100%;
+  }
+
+  /*responsive grid*/
+}
